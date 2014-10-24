@@ -155,7 +155,7 @@ bool hid_read_overlapped(phid_device_t p_hid_device, HANDLE h_completion_event)
 		// Get error that occurred to determine if the read is still pending
 		// or if it is completed.
 		error = GetLastError();
-		status = (ERROR_IO_PENDING == GetLastError());
+		status = (ERROR_IO_PENDING == error);
 	}
 	else
 	{

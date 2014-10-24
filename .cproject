@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?fileVersion 4.0.0?>
-
-<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="cdt.managedbuild.config.gnu.mingw.exe.debug.1710424744">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.mingw.exe.debug.1710424744" moduleId="org.eclipse.cdt.core.settings" name="Debug">
@@ -18,7 +16,7 @@
 					<folderInfo id="cdt.managedbuild.config.gnu.mingw.exe.debug.1710424744." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.mingw.exe.debug.1607127537" name="MinGW GCC" superClass="cdt.managedbuild.toolchain.gnu.mingw.exe.debug">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.mingw.exe.debug.252295288" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.mingw.exe.debug"/>
-							<builder buildPath="${workspace_loc:/hiddump/Debug}" enableCleanBuild="true" id="cdt.managedbuild.tool.gnu.builder.mingw.base.867836105" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" parallelBuildOn="true" parallelizationNumber="-1" superClass="cdt.managedbuild.tool.gnu.builder.mingw.base">
+							<builder buildPath="${workspace_loc:/hiddump/Debug}" enableCleanBuild="true" id="cdt.managedbuild.tool.gnu.builder.mingw.base.867836105" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="cdt.managedbuild.tool.gnu.builder.mingw.base">
 								<outputEntries>
 									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
 									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
@@ -27,6 +25,10 @@
 							<tool id="cdt.managedbuild.tool.gnu.assembler.mingw.exe.debug.628292700" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.exe.debug">
 								<option id="gnu.both.asm.option.include.paths.1785024819" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/MinGW/include/ddk"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/hiddump/hiddump/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/hiddump/hiddump/usb}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/hiddump/hiddump/win}&quot;"/>
+									<listOptionValue builtIn="false" value="../hiddump/common"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.394921275" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -41,8 +43,8 @@
 								<option id="gnu.c.compiler.option.include.paths.1492909832" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/MinGW/include/ddk"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/win}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/usb}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/common}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.147789974" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
@@ -51,12 +53,9 @@
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1837328044" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug.1347659829" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug">
-								<option id="gnu.c.link.option.paths.1304860232" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;C:\MinGW\lib&quot;"/>
-								</option>
+								<option id="gnu.c.link.option.paths.1304860232" name="Library search path (-L)" superClass="gnu.c.link.option.paths"/>
 								<option id="gnu.c.link.option.libs.101609234" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
-									<listOptionValue builtIn="false" value="setupapi"/>
-									<listOptionValue builtIn="false" value="hid"/>
+									<listOptionValue builtIn="false" value="usb-win32"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1707307989" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -67,11 +66,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="winapi_usb|kmf|blah|USB|usb|mcp|win|src|common" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-						<entry excluding="winapi_usb|reg_device_notification.c|hid_reader.c|msg_handler.c|hid_handler.c|hid_report.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="win"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="common"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="usb"/>
+						<entry excluding="winapi_usb|kmf|blah|mcp|usb|USB|win|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="usb"/>
+						<entry excluding="winapi_usb|hid_reader.c|reg_device_notification.c|hid_handler.c|msg_handler.c|hid_report.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="win"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -116,11 +114,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry excluding="blah|kmf|winapi_usb" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="win"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="common"/>
 						<entry excluding="blah|kmf|winapi_usb|mcp|usb|USB|win|src|common" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="usb"/>
+						<entry excluding="blah|kmf|winapi_usb" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="win"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -155,4 +152,5 @@
 			</target>
 		</buildTargets>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 </cproject>

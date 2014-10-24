@@ -114,13 +114,12 @@ void InitializeOutput(void)
 {
 	int hCrt;
 	FILE *hf;
-	int i;
 
 	AllocConsole();
 	hCrt = _open_osfhandle((long) GetStdHandle(STD_OUTPUT_HANDLE), _O_TEXT);
 	hf = _fdopen(hCrt, "w");
 	*stdout = *hf;
-	i = setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stdout, NULL, _IONBF, 0);
 	return;
 }
 

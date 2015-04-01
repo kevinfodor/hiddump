@@ -25,10 +25,6 @@
 							<tool id="cdt.managedbuild.tool.gnu.assembler.mingw.exe.debug.628292700" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.exe.debug">
 								<option id="gnu.both.asm.option.include.paths.1785024819" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/MinGW/include/ddk"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/hiddump/hiddump/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/hiddump/hiddump/usb}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/hiddump/hiddump/win}&quot;"/>
-									<listOptionValue builtIn="false" value="../hiddump/common"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.394921275" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
